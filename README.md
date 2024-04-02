@@ -1,1 +1,1 @@
-# coh3-mod-tools
+# COH3-ESSENCE-mod-tools
