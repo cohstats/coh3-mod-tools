@@ -1,0 +1,204 @@
+|PLAYBILL GUIDE BY SHADOWPHREAK - LAST UPDATED 4/2/2024| | | | |
+|:---:|:---:|:---:|:---:|:---:|
+| | | | | |
+|PLAYBILLS & BASICS|SINGLE PLAYER|MULTIPLAYER|DESCRIPTION| |
+|playbill|Yes|Yes|Where the fun starts. Right click and add under the "Prefabs/mapname" in your right tree.| |
+|Prefab Group|Yes|Yes|No in game effect. Simply used for organizing your Playbills.| |
+|SGroup|Yes|Yes|SGroup are squads. Armies that are controlled by either AI or Human.| |
+|EGroup|Yes|Yes|EGroup are blueprints. Buildings, etc…| |
+|Marker|Yes|Yes|Term to specify a particulare area/radius.| |
+|Properties/Options/Sgroup|Yes|Yes|Every blueprint entity has a "SGroup" option in the Properties Window. This is a unique name (variable) you give a unit so you can refer to it later. Make the name something that makes sense. This is optional, but good practice.| |
+|EGroup Name|Yes|Yes|Name you give blueprint entities for spawning, despawning, warping, garrisoning, etc…| |
+| | | | | |
+| | | | | |
+|CONDITIONS LIST| | | | |
+|CONDITION|SINGLE PLAYER|MULTIPLAYER|DESCRIPTION|EXAMPLE|
+|AggregatedCount| | |No idea, not tested yet.| |
+|AskScarFunction| | |No idea, not tested yet.| |
+|Boolean| | |No idea, not tested yet.| |
+|CheckAffectorTable| | |No idea, not tested yet.| |
+|CheckDifficultySetting| | |No idea, not tested yet.| |
+|CheckLedgerValue| | |No idea, not tested yet.| |
+|CheckNarrativeVariable| | |No idea, not tested yet.| |
+|CheckPlayerStateModelInt| | |No idea, not tested yet.| |
+|CheckRace| | |No idea, not tested yet.| |
+|CheckTerritoryFrontlineDistance| | |No idea, not tested yet.| |
+|CheckTerritoryOwnedBy|YES|YES|If Capture point is owned by a player.| |
+|CompareUnitCounts| | |No idea, not tested yet.| |
+|CountConstructedEntities| | |No idea, not tested yet.| |
+|CountConstructedSquads| | |No idea, not tested yet.| |
+|CountConstructedUpgrades| | |No idea, not tested yet.| |
+|EntityAtLocation| | |Not Used. Use UnitAtLocation instead.| |
+|GameTime| | |No idea, not tested yet.| |
+|GroupCount| | |No idea, not tested yet.| |
+|HasBuildings| | |No idea, not tested yet.| |
+|HasResources| | |If Player has X amount of resources.| |
+|HasUnits| | |IF Player has X amount of units.| |
+|HealthPercentage|YES|YES|If player is dead or alive or has some health.|If Player 1 is under 50% health, show warning text.|
+|IsGarrisoned|YES|YES|Check to see if Sgroup is in or out of building.| |
+|IsOnScreen|YES|YES|If unit is onscreen.| |
+|IsSuppressedOrPinnted|YES|YES|IF unit is suppressed or pinned down.| |
+|IsUnderAttack|YES|YES|If unit is under attack.| |
+|NoEventRunning|YES|YES|No idea - Not used?| |
+|None| | | | |
+|ObjectiveCounter| | |Not used. Used in DynamicObjective.| |
+|ObjectiveIntroCheck| | |Not used. Used in DynamicObjective.| |
+|ObjectiveIsComplete| | |Not used. Used in DynamicObjective.| |
+|ObjectiveIsFailed| | |Not used. Used in DynamicObjective.| |
+|ObjectiveIsStarted| | |Not used. Used in DynamicObjective.| |
+|ObjectiveTimer| | |Not used. Used in DynamicObjective.| |
+|PlayerCanSee|YES|YES|If Player can see unit on screen.| |
+|PlayerHasAbilityOrUpgrade|YES|YES|If player has certain ability or upgrade| |
+|PlayerOwner|YES|YES|If unit is owned by Player 1, 2, etc…| |
+|PlayerPopulation|YES|YES|If Player Population is X.|This is good for it enemy has 100 pop, reinforcement come in, or something happens.|
+|PrefabIsActive|YES|YES|If a prefab is running.| |
+|SGroupCanSeeSGroup| | | | |
+|TrueForTurns| | | | |
+|Turn Duraction| | | | |
+|UnitAtLocation|YES|YES|If a Player, SGroup or EGroup is at a location.|Player 1 enters area then something happens…|
+| | | | | |
+| | | | | |
+|ACTION LIST| | | | |
+|ACTION|SINGLE PLAYER|MULTIPLAYER|DESCRIPTION|EXAMPLE|
+|AddEGroupToGroup| | |No idea - Not used?| |
+|AddObjHintpointTo| | |No idea - Not used?| |
+|AddSGroupToGroup|YES|YES|Combining units|IF you want to add a new unit to an existing Sgroup. Say you recruit new units, you want to add to a group.|
+|AIClearSoloSquads| | |No idea - Not used?| |
+|AILockSquads|YES|YES|Changing units to locked AI|This prevents AI from controlling units. This should be done when you spawn units automatically, but in rare cases if you need to change later.|
+|AIPopMilitaryTargetEGroupScore| | |No idea - Not used?| |
+|AIPopMilitaryTargetTargetScoreMultiplier| | |No idea - Not used?| |
+|AIPopUnitTargetTargetScoreMultiplier| | |No idea - Not used?| |
+|AIPrefabChangeIntents| | |No idea - Not used?| |
+|AIPrefabSetCanReassign| | |No idea - Not used?| |
+|AIPushMilitaryTargetEGroupScore| | |No idea - Not used?| |
+|AIPushMilitaryTargetScoreMultiplier| | |No idea - Not used?| |
+|AIPushUnitTargetScoreMultiplier| | |No idea - Not used?| |
+|AISetLuaPersonalityFile| | |No idea - Not used?| |
+|AISetMarkerActive| | |No idea - Not used?| |
+|AISetPersonality| | |No idea - Not used?| |
+|AISetPlayerStrategy| | |No idea - Not used?| |
+|AIUnlockSquads| | |No idea - Not used?| |
+|ApplyModifier|YES|YES|Adjust unit speed, damage, armor, etc…| |
+|Attack|YES|YES|Orders unit to attack a location or SGroup| |
+|AttackMove|YES|YES|Orders unit to move to location or SGroup. Attack anything on its way.| |
+|BookmarkTime| | |Not used. Used in DynamicObjective.| |
+|CallScanFuntion| | |Not used. Used in DynamicObjective.| |
+|CameraFocusEvent| | |No idea - Not used?| |
+|CameraSplinePan| | |No idea - Not used?| |
+|CameraUnFocus| | |No idea - Not used?| |
+|ChangePartisanHubRelationPoint| | |No idea - Not used?| |
+|ClearSGroup| | |No idea - Not used?| |
+|CompleteObjective| | |Not used. Used in DynamicObjective.| |
+|Construct|YES|YES|Orders engineer/builder unit to construct defense/sandbag/etc.. Building must be available to that particular unit to work.| |
+|ConvertToFieldSupport| | | | |
+|CreateDynamicObjective|YES|NO|Used for creating Single Player Mission Objective. Will create a new tutorial for this. It's a lot of information.| |
+|CreateWarningObjective| | | | |
+|DeSpawn|YES|YES|Removing visbility in game of SGroup or EGroup.|If I want to hide a unit because of an action - like a crashed plane - and have it appear after something happens in game.|
+|EnableEntityExtension| | |No idea - Not used?| |
+|EventDelay| | |No idea - Not used?| |
+|FadeFromBlack|YES|YES|Work with FadeToBlack. Brings screen from darkness.| |
+|FadeSequence| | |No idea - Not used?| |
+|FadeToBlack|YES|YES|Works with FadeFromBlack. Turn screen into dark.| |
+|FailObjective| | |Not used. Used in DynamicObjective.| |
+|FillSGroupFromMarker| | |No idea - Not used?| |
+|FillSGroupWithPlayerSquads| | |No idea - Not used?| |
+|FOWReveal|YES|YES|Show an area on the map remove FOW|If there is a new objective or army entering map. I usually use this with a short duration to show players.|
+|FOWUnReveal| | |Remove FOW Vision, works with FOWReveal.| |
+|GameTextTitleFade|YES|YES|Small text msg bottom center of screen. 2 or 3 words max.| |
+|Garrison|YES|NO|Order unit to hold up in building/vehicle and vice versa.|Unit doesn’t need to be close to building. Building must be named. Unit will run to building and enter it regardless where they are.|
+|GroupKill|YES|YES|Kill any SGroup or EGroup.|Ideal for wiping out complete armies after a mission/task is complete.|
+|InstantCaptureStrategicPoint| | |Instantly convert capture point to player or enemy.| |
+|KillNeutralEntitiesNearPosition| | |No idea - Not used?| |
+|LaunchCustomMission| | |No idea - Not used?| |
+|LaunchPrefabOrPlaybill|YES|YES|Load another Playbill. |Very important. If a task/mission is finished, simply call a new playbill. Always use this instead of Instantly starting new playbills on start. If you start too many playbills at start of game, users will get bugsplat.|
+|LoadAtmosphere|YES|YES|Change Atmosphere.|Create a couple atmospheres with different lighting, sun orbit, and/or fog. Simply calling this action and setting the duration will automatically adjust/fade into new one. Great for night/day transition.|
+|Loop|YES|YES|Repeat Playbill.|Dangerous but important action. It will repeat this playbill. I use this for attack commands. I'll have one playbill that spawns, and then launch another playbill that simply attacks, waits, attacks, etc…|
+|MaxSpeed| | |Not used. Use APPLYMODIFER instead.| |
+|MetamapLinkAttachmentToCompany| | |No idea - Not used?| |
+|MissionComplete|YES|YES|Mission Complete screen (end game)| |
+|MIssionFail|YES|YES|Mission Fail screen (end game)| |
+|ModifyAccuracy| | |Not used. Use APPLYMODIFER instead.| |
+|ModifyScatter| | |Not used. Use APPLYMODIFER instead.| |
+|MoveUnit| | |Move a unit without attacking. Not really used, as I use AttackMove instead. |Rarely used for NPC units.|
+|MultiplayerComplete|YES|YES|Multiplayer Complete screen (end game)| |
+|NISEnd| | |No idea - Not used?| |
+|None| | | | |
+|ObjectiveAddHealthBar| | |Not used. Used in DynamicObjective.| |
+|ObjectiveIncreaseCounter| | |Not used. Used in DynamicObjective.| |
+|ObjectivePauseTimer| | |Not used. Used in DynamicObjective.| |
+|ObjectiveRemoveHealthBar| | |Not used. Used in DynamicObjective.| |
+|ObjectiveSetCanFail| | |Not used. Used in DynamicObjective.| |
+|ObjectiveSetCounter| | |Not used. Used in DynamicObjective.| |
+|ObjectiveSetEnableTitlecard| | |Not used. Used in DynamicObjective.| |
+|ObjectiveShowTitle| | |Not used. Used in DynamicObjective.| |
+|ObjectiveStartTimer| | |Not used. Used in DynamicObjective.| |
+|ObjectiveStopCounter| | |Not used. Used in DynamicObjective.| |
+|ObjectiveStopTimer| | |Not used. Used in DynamicObjective.| |
+|ObjectiveUnPauseTimer| | |Not used. Used in DynamicObjective.| |
+|PlayAnimation| | |No idea - Not used?| |
+|PlayCampaignBattleSitrep| | |No idea - Not used?| |
+|PlayCaptureCamera| | |No idea - Not used?| |
+|PlayerAddAbility| | |No idea - Not used?| |
+|PlayerInstantUpgrade| | |No idea - Not used?| |
+|PlayerSetPopulationCap|YES|YES|Set Player Population cap.|Sets population of player. Warning, if you do this for any player other than player 1, those players MUST be present as Human or AI in game, otherwise map will not load.|
+|PlayerSetResource|YES|YES|Add/Remove specific resources from player.|Sets resources of player. Warning, if you do this for any player other than player 1, those players MUST be present as Human or AI in game, otherwise map will not load.|
+|PlayerSetResourceCap|YES|YES|Set specific resource cap (ammo/fuel/etc..)|Sets resource cap of player. Warning, if you do this for any player other than player 1, those players MUST be present as Human or AI in game, otherwise map will not load.|
+|PlayMusicStinger| | |No idea - Not used?| |
+|PlaySpeech| | |No idea - Not used?| |
+|RandomWeightedActions|YES|YES|Randomly chose actions. |I use this mainly with AttackMove. Provides random locations where units will attack, so its not the same each gameplay.|
+|RemoveModifier| | |No idea - Not used?| |
+|RemoveObjHintpoint| | |Not used. Used in DynamicObjective.| |
+|ResourcesDisable|YES|YES|Disable resources from growing. (ammo/fuel/etc..)|Disables ability to auto-grow resources. Warning, if you do this for any player other than player 1, those players MUST be present as Human or AI in game, otherwise map will not load.|
+|ResourcesEnable|YES|YES|Enable resources if disabled.|Re-enables ability to auto-grow resources. Warning, if you do this for any player other than player 1, those players MUST be present as Human or AI in game, otherwise map will not load.|
+|ReSpawn|YES|YES|Respawn SGroup or EGroup is DeSpawned.|Used with DeSpawn action.|
+|Retreat|YES|YES|Tell a unit to retreat.| |
+|SetAbilityAvailability| | |No idea - Not used?| |
+|SetCrushMode| | |No idea - Not used?| |
+|SetDamageRecievedModifier| | |Not used. Use APPLYMODIFER instead.| |
+|SetHealth| | |Not used. Use APPLYMODIFER instead.| |
+|SetInteractiveStage|YES|YES|Open locked zones on map.|Paint interactive zones in your map, name them 2, 3, 4, 5, etc… This opens these zones up for human players. You cannot RELOCK zones. Only unlock. Keep in mind, locked zones don’t apply to AI players/units, they ignore it.|
+|SetInterruptingAction| | |No idea - Not used?| |
+|SetInvulnerable|YES|YES|Make object invincible.| |
+|SetLedger| | |No idea how to use…| |
+|SetMusic| | |No idea how to use…| |
+|SetNarrativeActionEnabled.| | |Not used. Used in DynamicObjective.| |
+|SetNarrativeInfluenceValueToUse| | |Not used. Used in DynamicObjective.| |
+|SetNarrativeVariable| | |Not used. Used in DynamicObjective.| |
+|SetOwner|YES|YES|Change owner of SGroup/EGroup.|Example, you rescue some troops, they turn to the player controlled.|
+|SetPartisanHubActived| | | | |
+|SetSelectable|YES|YES|Change if player can select a SGroup/EGroup |Important for single player missions. If you want the unit to not be selectable by the player, but still on its team.|
+|SetStateModelProperty| | |No idea - Not used?| |
+|SetTargetingType| | |No idea - Not used?| |
+|SGRoupSetAutoTargetting| | |No idea - Not used?| |
+|SGroupWarpTo|YES|YES|Immediately move SGroup to new location.|I use this if I want to move entity, instant travel.|
+|SoldierStoresClear| | |Not used. Used in DynamicObjective.| |
+|SoldierStoresSetNextMissionStory| | |Not used. Used in DynamicObjective.| |
+|SoldierStoresSetNextSkirmishStory| | |Not used. Used in DynamicObjective.| |
+|SpawnEntities|YES|YES|Spawn EGroup |Spawn anything that isn't a army unit. Buildings, etc…|
+|SpawnLiveMunition| | |No idea - Not used?| |
+|SpawnMarkerFX| | |No idea - Not used?| |
+|SpawnRandomTarget| | |No idea - Not used?| |
+|SpawnSquads|YES|YES|SpawnSGroup|Most used action. Spawn armies. Keep in mind here you not only control what unit spawns, but the owner, how many units to spawn with the group, and I almost always check "AI LOCK" so I have control of what they do not AI.|
+|SquadPath|YES|YES|Have SGroup follow pre-created path.|I use this to control where spawn AI travels. You first create a waypoint entity spline, the simply tell the unit to follow this.|
+|StartIntel| | |Not used. Used in DynamicObjective.| |
+|StartObjective| | |Not used. Used in DynamicObjective.| |
+|StartPrimaryObjectiveOrPlaybill| | |Not used. Used in DynamicObjective.| |
+|StartTimer| | |Not used. Used in DynamicObjective.| |
+|StopObjective| | |Not used. Used in DynamicObjective.| |
+|StopPrefabOrPlaybill|YES|YES|Stop playbill that’s looping.|Impotant! IF you have any playbills with loops, I use this to stop the loop.|
+|ThreatArrowAdd| | |Not used. Used in DynamicObjective.| |
+|TrainingGoalSequence| | |Not used. Used in DynamicObjective.| |
+|UIAllTErritoryHide| | |No idea - Not used?| |
+|UIAllTerritoryShow| | |No idea - Not used?| |
+|UIFireEventCue|YES|YES|Displays text box top center of screen. This can hold the most words, usually around 20.|This is the only method of telling the player a bunch of information.|
+|UIFireMinimapBlip|YES|YES|Show blip on map for players to see.| |
+|UIFlashAbilityButton| | |No idea - Not used?| |
+|UIRemoveMinimapBlip| | |Remove blip if you have it without duration.| |
+|UISetHUDVisibility|YES|NO|Remove parts of the HUD|Single player only. Hide Map, Abilities, Etc.|
+|UIShowInfoPanel|YES|YES|Displays graphical 2 line text box top right of screen. Two lines, roughly 2-3 words and 3-4 words.|Pretty box I use for mission updates and such in multiplayer missions.|
+|UpgradeCommand| | |No idea - Not used?| |
+|UseAbility|YES|YES|Orders BG ability in game.|Great for calling in airstrikes, and any BG ability.|
+|Wait|YES|YES|Addes a pause between actions.|Used the most. This is very important. You don’t want to have too many actions firing at one time can cause bugsplat. This allows you to put pauses. Especially if your using any TEXT messages. If your text message duration is 10 seconds, you want a WAIT command after for 10 seconds. As an example.|
+|WAitForAnyEventComplete| | |No idea - Not used?| |
+|WorldEnableSharedLineOfSight| | |No idea - Not used?| |
+| | | | | |
